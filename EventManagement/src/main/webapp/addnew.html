@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="datetime-local"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Event Details</h1>
+        <form action="addnew" method="post">
+            
+            <label for="name">Event Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="Eventtype">Type of Event :</label>
+            <input type="text" id="Eventtype" name="Eventtype" required>
+            
+             <label for="guests">Guests of the Event:</label>
+            <input type="text" id="guests" name="guests" required>
+            
+            <label for="coordinators">Main Coordinator of the Event:</label>
+            <input type="text" id="coordinators" name="coordinators" required>
+            
+            <label for="faculty">Faculty Advisor of the Event:</label>
+            <input type="text" id="faculty" name="faculty" required>
+            
+            <label for="winners">Winners of the Event:</label>
+            <input type="text" id="winners" name="winners" required>
+            <br>
+            <label for="date">Date of the Event:</label>
+            <input type="date" id="dat" name="dat" required>
+            <br><br>
+            <label for="time">Start time of the Event:</label>
+            <input type="time" id="time" name="starttime" required>
+            <br><br>
+            <label for="time">End time of the Event:</label>
+            <input type="time" id="time" name="endtime" required>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
